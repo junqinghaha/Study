@@ -1,0 +1,537 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="table_line_v_other1">
+        <item name="android:background">@color/event_list_3</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="table_line_h_other1">
+        <item name="android:background">@color/event_list_3</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="base_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="vg_table_item">
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="ll_item_white">
+        <item name="android:background">@color/white_color_2</item>
+    </style>
+
+    <style name="ll_item_gray">
+        <item name="android:background">@color/soft_grey_2</item>
+    </style>
+
+    <style name="txt_pre_check_content">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_content</item>
+    </style>
+
+    <style name="txt_login_content">
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DA7F7F7F</item>
+    </style>
+    
+      <style name="btn_text_view">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:padding">@dimen/padding_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/item_layout_margin_middle</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bk_btn_textview</item>
+    </style>
+    
+    <style name="btn_text_view_middle">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:paddingRight">@dimen/padding_small</item>
+        <item name="android:paddingTop">@dimen/padding_large</item>
+        <item name="android:paddingBottom">@dimen/padding_large</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/item_layout_margin_little</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bk_btn_textview</item>
+    </style>
+
+    <style name="btn_text_view_child_item">
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:paddingLeft">@dimen/padding_large</item>
+        <item name="android:paddingRight">@dimen/padding_large</item>
+        <item name="android:paddingBottom">@dimen/padding_medium</item>
+        <item name="android:paddingTop">@dimen/padding_medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">@dimen/item_layout_margin_middle</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bk_btn_textview</item>
+    </style>
+
+    <style name="txt_label">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#DA2D2D2D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txt_size_28">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#DA2D2D2D</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="txt_event_list_item_1">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="txt_event_list_item_small">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="DialogText">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="DialogText.Title" parent="@style/DialogText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="shadowText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="simpText">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="simpText2">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="txt_static">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DA2D2D2D</item>
+    </style>
+
+    <style name="txt_feedback_title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">120dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="txt_feedback_content">
+        <item name="android:gravity">center</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:background">@drawable/bk_vg</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="ext_feedback_content_number">
+        <item name="android:gravity">center</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/bk_vg</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:inputType">number|numberSigned|numberDecimal</item>
+    </style>
+
+    <style name="ext_feedback_content_phone">
+        <item name="android:gravity">center</item>
+        <item name="android:minLines">2</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/bk_vg</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="txt_item1">
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="txt_item_title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#DA2D2D2D</item>
+    </style>
+
+    <style name="txt_main_menu">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@drawable/bk_vg</item>
+    </style>
+
+    <style name="txt_id_name">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="txt_grid">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:shadowColor">@color/black_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="txt_grid_main">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:shadowColor">@color/black_color</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">0.5</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="txt_assignment_lst_title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="txt_event_state">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="txt_assignment_lst_item">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:shadowColor">@color/black_color</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="txt_assignment_lst_item_child">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:shadowColor">@color/black_color</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="txt_assignment_lst_item_button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black_color</item>
+    </style>
+
+    <style name="txt_event_state_item">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_color</item>
+        <item name="android:shadowColor">@color/black_color</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <style name="txt_fragment_lst_item">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:shadowColor">@color/white_color</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:shadowDx">0.5</item>
+        <item name="android:shadowDy">0.2</item>
+        <item name="android:shadowRadius">0.1</item>
+    </style>
+
+    <style name="txt_item_normal1_key">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_content</item>
+        <item name="android:shadowColor">@color/txt_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="txt_item_normal1_value">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/txt_content</item>
+        <item name="android:shadowColor">@color/txt_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_menu">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:minHeight">@dimen/list_item_min_heght</item>
+        <item name="android:background">@color/white_smoke</item>
+    </style>
+
+    <style name="text_menu_item_001">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:background">@color/gainsboro</item>
+    </style>
+
+    <style name="text_menu_item_click">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/padding_smallest</item>
+        <item name="android:background">@drawable/bk_vg</item>
+    </style>
+
+    <style name="txt_menu">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+
+    <style name="text_main_bottom_menu">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_content">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_button">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="text_small">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="txt_compass_info_title">
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="txt_compass_info_content">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">8dp</item>
+    </style>
+
+    <style name="table_line_v_white">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="table_line_h_white">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="table_line_h_gray">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="table_line_h_soft_gray">
+        <item name="android:background">@color/white_smoke</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="table_line_v_black">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="table_line_v_gray">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="table_line_h_black">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="splite_line_v_white">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="splite_line_h_white">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="splite_line_v_black">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="splite_line_h_black">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="splite_line_v_gray">
+        <item name="android:background">@color/light_gray</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="splite_line_v_gray_margin_16">
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="splite_line_h_gray">
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="ButtonOK">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="ButtonCancel">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="vg_item">
+        <item name="android:clickable">true</item>
+        <item name="android:minHeight">@dimen/vg_item_min_height</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_margin">@dimen/vg_item_min_height</item>
+        <item name="android:background">@drawable/bk_vg_01</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+    </style>
+
+    <style name="vg_child_item_v">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/vg_item_min_height</item>
+    </style>
+
+    <style name="text_menu_collect_item_value">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+</resources>

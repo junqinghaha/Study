@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="left_menu_width">250dp</dimen>
+    <dimen name="right_menu_width">250dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="min_hight">60dp</dimen>
+    <dimen name="table_width">100dp</dimen>
+    <dimen name="table_width1">96dp</dimen>
+    <dimen name="table_width2">80dp</dimen>
+    <dimen name="table_width3">60dp</dimen>
+    <dimen name="table_width4">48dp</dimen>
+    <dimen name="table_width5">60dp</dimen>
+    <dimen name="table_width6">120dp</dimen>
+    <dimen name="table_width7">80dp</dimen>
+    <dimen name="table_width8">80dp</dimen>
+    <dimen name="table_height">48dp</dimen>
+    <dimen name="text_size_tost">20sp</dimen>
+    <dimen name="padding_smallest">2dp</dimen>
+    <dimen name="padding_small">4dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_medium_2">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="item_height">67dp</dimen>
+    <dimen name="section_div_height">20dp</dimen>
+    <dimen name="vg_item_min_height">80dp</dimen>
+    <dimen name="list_item_min_height_big">60dp</dimen>
+    <dimen name="list_item_min_heght">48dp</dimen>
+    <dimen name="spinner_item_min_heght">40dp</dimen>
+    <dimen name="top_view_min_heght">48dp</dimen>
+    <dimen name="menu_list_item_min_heght">40dp</dimen>
+    <dimen name="step_item_min_height">48dp</dimen>
+    <dimen name="btn_item_min_heght">32dp</dimen>
+    <dimen name="text_item_min_heght">24dp</dimen>
+    <dimen name="item_layout_margin_little">4dp</dimen>
+    <dimen name="item_layout_margin_middle">8dp</dimen>
+    <dimen name="item_layout_margin_bit">16dp</dimen>
+
+    	 <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+     <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    
+</resources>

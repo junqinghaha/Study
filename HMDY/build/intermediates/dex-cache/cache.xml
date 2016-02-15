@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\TNT\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\gson-2.3.1-2b5db15ad33cbb5a52f9fee172cece2e4e133214.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\libs\zpSDK.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="f23506b9ff60e93ccc6827ad135597ac763a2dff">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\zpSDK-89c48ed4f1939fef284c4129f88fe28feef7e4d9.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\pinyin4j-2.5.0-82f53b7026b3ad9a8720e716bb140bc5a21ae7ae.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\build\intermediates\exploded-aar\HMDY\tableFixHeaders\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d3125d9a4f89cbad10b32bb3c56452581e3bf114">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\debug\classes-bdb51d17a338f9964ec348db1a80ba85d2cd7013.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="62681b8212ca52278feafec31775fd0cb096d99a">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\ksoap2-android-assembly-3.3.0-jar-with-dependencies-ac9899d33a8ec3bb2ca9f604cfcf90c9fc69142a.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\build\intermediates\exploded-aar\HMDY\androidpullToRefreshSdk\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c60d332bd0437c67e469c707d386c87c7befb72">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\debug\classes-6de0cde7757546784c897768be6b997b252972a9.jar" />
+    </item>
+    <item
+        jar="D:\Users\TNT\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\support-v4-19.1.0-f1c69931e25d7bd51f644754a762b6b191cc4e2f.jar" />
+    </item>
+    <item
+        jar="D:\workspace_studio\HMDY\hMDY\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="D:\workspace_studio\HMDY\hMDY\build\intermediates\pre-dexed\release\classes-f3b277545f07739272a3e93ff7f47f6aac42204d.jar" />
+    </item>
+
+</items>

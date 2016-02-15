@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bk_title"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="清空"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="过滤"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/padding_medium"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#555555"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white_smoke" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white_color"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/vg_01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_medium"
+                    android:text="无记录"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/listView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vg_02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_small"
+                    android:text="起始时间:" />
+
+                <View style="@style/table_line_h_soft_gray" />
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    style="@style/text_menu_collect_item_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_vg"
+                    android:drawableRight="@android:drawable/ic_menu_today"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_medium" />
+
+                <View style="@style/table_line_h_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_small"
+                    android:text="终止时间:" />
+
+                <View style="@style/table_line_h_soft_gray" />
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    style="@style/text_menu_collect_item_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_vg"
+                    android:drawableRight="@android:drawable/ic_menu_today"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_medium" />
+
+                <View style="@style/table_line_h_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_small"
+                        android:text="快捷选择:" />
+
+                    <View style="@style/table_line_h_soft_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioGroup
+                            android:id="@+id/cb_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <RadioButton
+                                android:id="@+id/check_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/padding_medium"
+                                android:text="当天" />
+
+                            <View style="@style/table_line_h_soft_gray" />
+
+                            <RadioButton
+                                android:id="@+id/check_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/padding_medium"
+                                android:text="三天" />
+
+                            <View style="@style/table_line_h_soft_gray" />
+
+                            <RadioButton
+                                android:id="@+id/check_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/padding_medium"
+                                android:text="一周" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/table_line_h_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

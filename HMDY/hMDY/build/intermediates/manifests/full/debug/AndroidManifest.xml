@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.tnt.hmdy"
+    android:versionCode="16"
+    android:versionName="11.11" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.android.tnt.hmdy.MApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.tnt.hmdy.LoginActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.MainActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.AddActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.AddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.PrintTestActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.PrintTestActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.PrintActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.PrintActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.PrintOneActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.PrintOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.tnt.hmdy.PrintSettingActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/activity_print_setting" >
+            <intent-filter>
+                <action android:name="com.android.tnt.hmdy.PrintSettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.mtkj.broadcast.NetWorkChangedReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
